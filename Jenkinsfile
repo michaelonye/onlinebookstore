@@ -13,7 +13,7 @@ pipeline {
                 git 'https://github.com/michaelonye/onlinebookstore.git'
 
                 // Run Maven on a Unix agent.
-                sh "mvn -Dmaven.test.failure.ignore=false clean package -X"
+                sh "mvn clean package -X"
 
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
