@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 
-                git 'https://github.com/michaelonye/bootique.git'
+                git 'https://github.com/michaelonye/onlinebookstore.git'
 
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=false clean package"
